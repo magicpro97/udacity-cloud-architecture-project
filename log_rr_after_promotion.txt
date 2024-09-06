@@ -1,0 +1,11 @@
+mysql> insert into temp_tbl value(1);
+Query OK, 1 row affected (0.01 sec)
+
+mysql> select * from temp_tbl;
++----+
+| id |
++----+
+|  0 |
+|  1 |
++----+
+2 rows in set (0.00 sec)
