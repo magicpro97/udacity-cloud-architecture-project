@@ -1,0 +1,47 @@
+[ec2-user@ip-10-1-11-8 ~]$ mysql -h udacity.c6goifxvke6p.us-east-1.rds.amazonaws.com -P 3306 -u admin -p
+Enter password:
+Welcome to the MySQL monitor.  Commands end with ; or \g.
+Your MySQL connection id is 254
+Server version: 8.0.39 Source distribution
+
+Copyright (c) 2000, 2024, Oracle and/or its affiliates.
+
+Oracle is a registered trademark of Oracle Corporation and/or its
+affiliates. Other names may be trademarks of their respective
+owners.
+
+Type 'help;' or '\h' for help. Type '\c' to clear the current input statement.
+
+mysql> CREATE DATABASE udacity
+    -> ;
+Query OK, 1 row affected (0.01 sec)
+
+mysql> SELECT udacity;
+ERROR 1054 (42S22): Unknown column 'udacity' in 'field list'
+mysql> use udacity;
+Database changed
+mysql> create table temp_tbl;
+ERROR 4028 (HY000): A table must have at least one visible column.
+mysql> create table temp_tbl(id INT PRIMARY KEY);
+Query OK, 0 rows affected (0.07 sec)
+
+mysql> show tables;
++-------------------+
+| Tables_in_udacity |
++-------------------+
+| temp_tbl          |
++-------------------+
+1 row in set (0.00 sec)
+
+mysql> insert into temp_tbl values (0);
+Query OK, 1 row affected (0.00 sec)
+
+mysql> select * from temp_tbl;
++----+
+| id |
++----+
+|  0 |
++----+
+1 row in set (0.00 sec)
+
+mysql>
