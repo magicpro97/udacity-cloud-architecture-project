@@ -1,0 +1,34 @@
+﻿Estimate summary
+Upfront cost,Monthly cost,Total 12 months cost,Currency
+0,16514.8,198177.60,USD
+,,* Includes upfront cost
+
+
+Detailed Estimate
+Group hierarchy,Region,Description,Service,Upfront,Monthly,First 12 months total,Currency,Status,Configuration summary
+My Estimate,US East (N. Virginia),,Amazon EC2 ,0,2121.6,25459.20,USD,,"Tenancy (Shared Instances), Operating system (Linux), Workload (Consistent, Number of instances: 8), Advance EC2 instance (m5a.2xlarge), Pricing strategy (On-Demand Utilization: 100 %Utilized/Month), Enable monitoring (disabled), DT Inbound: Internet (1 TB per month), DT Outbound: Internet (1 TB per month), DT Intra-Region: (1 TB per month)"
+My Estimate,US East (N. Virginia),,Application Load Balancer,0,62.05,744.60,USD,,Number of Application Load Balancers (2)
+My Estimate,US East (N. Virginia),,Amazon RDS for PostgreSQL,0,5716.8,68601.60,USD,,"Storage amount (1 TB), Storage volume (General Purpose SSD (gp2)), Nodes (1), Instance Type (db.m5.8xlarge), Utilization (On-Demand only) (100 %Utilized/Month), Deployment Option (Multi-AZ), Pricing Model (OnDemand), Additional backup storage (10 TB)"
+My Estimate,US East (N. Virginia),,VPN Connection,0,603.5,7242.00,USD,,"Working days per month (22), Number of Site-to-Site VPN Connections (1), Number of subnet associations (4)"
+My Estimate,US East (N. Virginia),,Network Address Translation (NAT) Gateway,0,33.3,399.60,USD,,Number of NAT Gateways (1)
+My Estimate,US East (N. Virginia),,Public IPv4 Address,0,7.3,87.60,USD,,"Number of In-use public IPv4 addresses (2), Number of Idle public IPv4 addresses (0)"
+My Estimate,US East (N. Virginia),,Data Transfer,0,112.64,1351.68,USD,,"DT Inbound: Internet (1 TB per month), DT Outbound: Internet (1 TB per month), DT Intra-Region: (1 TB per month)"
+My Estimate,US East (N. Virginia),,Amazon CloudFront,0,0,0.00,USD,,Data transfer out to internet (0 TB per month)
+My Estimate,US East (Ohio),,Amazon RDS for PostgreSQL,0,5716.8,68601.60,USD,,"Storage amount (1 TB), Storage volume (General Purpose SSD (gp2)), Nodes (1), Instance Type (db.m5.8xlarge), Utilization (On-Demand only) (100 %Utilized/Month), Deployment Option (Multi-AZ), Pricing Model (OnDemand), Additional backup storage (10 TB)"
+My Estimate,US East (N. Virginia),,S3 Standard,0,325.52,3906.24,USD,,"PUT, COPY, POST, LIST requests to S3 Standard (10000000), GET, SELECT, and all other requests from S3 Standard (100000000), S3 Standard storage (10 TB per month)"
+My Estimate,US East (N. Virginia),,S3 Standard - Infrequent Access,0,21.25,255.00,USD,,"S3 Standard-IA storage (100 GB per month), PUT, COPY, POST, LIST requests to S3 Standard-IA (1000000), GET, SELECT, and all other requests from S3 Standard-IA (10000000)"
+My Estimate,US East (N. Virginia),,S3 Object Lambda,0,15.2870243,183.44,USD,,"GET requests from S3 (10000000), Duration that the Lambda function is set to execute per request (in ms) (50), Amount of memory allocated to the Lambda function (1 GB), Size of data returned by S3 Object Lambda (20 KB)"
+My Estimate,US East (N. Virginia),,Data Transfer,0,92.16,1105.92,USD,,"DT Inbound: Internet (1 TB per month), DT Outbound: Internet (1 TB per month)"
+My Estimate,US East (N. Virginia),,Amazon CloudWatch,0,1503.59,18043.08,USD,,"Number of Metrics (includes detailed and custom metrics) (1000), Standard Logs: Data Ingested (10 GB), Logs Delivered to CloudWatch Logs: Data Ingested (10 GB), Logs Delivered to S3: Data Ingested (10 GB), Number of Dashboards (100), Number of Standard Resolution Alarm Metrics (1000), Number of High Resolution Alarm Metrics (1000), Number of composite alarms (1000)"
+My Estimate,US East (N. Virginia),,Amazon Route 53,0,183,2196.00,USD,,"Hosted Zones (1), Number of Elastic Network Interfaces (2)"
+
+
+
+Acknowledgement
+"* AWS Pricing Calculator provides only an estimate of your AWS fees and doesn't include any taxes that might apply. Your actual fees depend on a variety of factors, including your actual usage of AWS services."
+Rationale: Increase resources
+Changes been made
+The RDS services. Increased  backup storage to 10 TB. It provides increased resilience and redundancy with its multi-region deployment.
+The Route 53 service. Increased with two elastic network interfaces.
+The Amazon CloudWatch service. Increased with 1000 metrics, 10 GB of standard logs, 10 GB of logs delivered to CloudWatch Logs, 10 GB of logs delivered to S3, 100 dashboards, 1000 standard resolution alarm metrics, 1000 high resolution alarm metrics, and 1000 composite alarms.
+Total monthly,"16,514.80 USD"

@@ -1,0 +1,26 @@
+﻿Estimate summary
+Upfront cost,Monthly cost,Total 12 months cost,Currency
+0,8489.01,101868.12,USD
+,,* Includes upfront cost
+
+
+Detailed Estimate
+Group hierarchy,Region,Description,Service,Upfront,Monthly,First 12 months total,Currency,Status,Configuration summary
+My Estimate,US East (N. Virginia),,Amazon EC2 ,0,2121.6,25459.20,USD,,"Tenancy (Shared Instances), Operating system (Linux), Workload (Consistent, Number of instances: 8), Advance EC2 instance (m5a.2xlarge), Pricing strategy (On-Demand Utilization: 100 %Utilized/Month), Enable monitoring (disabled), DT Inbound: Internet (1 TB per month), DT Outbound: Internet (1 TB per month), DT Intra-Region: (1 TB per month)"
+My Estimate,US East (N. Virginia),,Application Load Balancer,0,62.05,744.60,USD,,Number of Application Load Balancers (2)
+My Estimate,US East (N. Virginia),,Amazon RDS for PostgreSQL,0,2547.2000000000003,30566.40,USD,,"Storage amount (1 TB), Storage volume (General Purpose SSD (gp2)), Nodes (1), Instance Type (db.m5.8xlarge), Utilization (On-Demand only) (100 %Utilized/Month), Deployment Option (Single-AZ), Pricing Model (OnDemand)"
+My Estimate,US East (N. Virginia),,VPN Connection,0,603.5,7242.00,USD,,"Working days per month (22), Number of Site-to-Site VPN Connections (1), Number of subnet associations (4)"
+My Estimate,US East (N. Virginia),,Network Address Translation (NAT) Gateway,0,33.3,399.60,USD,,Number of NAT Gateways (1)
+My Estimate,US East (N. Virginia),,Public IPv4 Address,0,7.3,87.60,USD,,"Number of In-use public IPv4 addresses (2), Number of Idle public IPv4 addresses (0)"
+My Estimate,US East (N. Virginia),,Data Transfer,0,112.64,1351.68,USD,,"DT Inbound: Internet (1 TB per month), DT Outbound: Internet (1 TB per month), DT Intra-Region: (1 TB per month)"
+My Estimate,US East (N. Virginia),,Amazon CloudFront,0,0,0.00,USD,,Data transfer out to internet (0 TB per month)
+My Estimate,US East (Ohio),,Amazon RDS for PostgreSQL,0,2547.2000000000003,30566.40,USD,,"Storage amount (1 TB), Storage volume (General Purpose SSD (gp2)), Nodes (1), Instance Type (db.m5.8xlarge), Utilization (On-Demand only) (100 %Utilized/Month), Deployment Option (Single-AZ), Pricing Model (OnDemand)"
+My Estimate,US East (N. Virginia),,S3 Standard,0,325.52,3906.24,USD,,"PUT, COPY, POST, LIST requests to S3 Standard (10000000), GET, SELECT, and all other requests from S3 Standard (100000000), S3 Standard storage (10 TB per month)"
+My Estimate,US East (N. Virginia),,S3 Standard - Infrequent Access,0,21.25,255.00,USD,,"S3 Standard-IA storage (100 GB per month), PUT, COPY, POST, LIST requests to S3 Standard-IA (1000000), GET, SELECT, and all other requests from S3 Standard-IA (10000000)"
+My Estimate,US East (N. Virginia),,S3 Object Lambda,0,15.2870243,183.44,USD,,"GET requests from S3 (10000000), Duration that the Lambda function is set to execute per request (in ms) (50), Amount of memory allocated to the Lambda function (1 GB), Size of data returned by S3 Object Lambda (20 KB)"
+My Estimate,US East (N. Virginia),,Data Transfer,0,92.16,1105.92,USD,,"DT Inbound: Internet (1 TB per month), DT Outbound: Internet (1 TB per month)"
+
+
+
+Acknowledgement
+"* AWS Pricing Calculator provides only an estimate of your AWS fees and doesn't include any taxes that might apply. Your actual fees depend on a variety of factors, including your actual usage of AWS services."
