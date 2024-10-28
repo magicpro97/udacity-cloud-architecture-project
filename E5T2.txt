@@ -1,0 +1,9 @@
+Checkov (for Infrastructure as Code Compliance):
+
+Tool Use: Scans Terraform, CloudFormation, and Kubernetes manifests to identify security and compliance violations.
+Example Violation: Exposes misconfigurations like publicly accessible S3 buckets or insecure security group rules.
+
+Amazon Inspector (for AMI or Container Image Scanning):
+
+Tool Use: Scans Amazon Machine Images (AMIs) or container images for vulnerabilities such as outdated packages or software with known security issues.
+Example Violation: Finds unpatched software like an outdated OpenSSL version in an AMI or a container.

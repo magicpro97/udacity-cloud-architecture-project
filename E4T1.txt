@@ -1,0 +1,22 @@
+Changes to Prevent SSH Brute Force Attacks:
+Disable Password Authentication for SSH:
+
+Modify the SSH configuration to disable password authentication, allowing only key-based authentication. This makes it significantly harder for attackers to gain access through brute force attempts.
+bash
+
+Implement a Firewall or Security Group Rules:
+
+Restrict SSH access to specific IP addresses or ranges using security groups or a firewall. This limits the exposure of the SSH port (usually port 22) to only trusted sources.
+For example, update the security group to allow SSH access only from your office IP or VPN.
+
+Preventing Access to Sensitive Data:
+Implement IAM Policies with Least Privilege:
+
+Ensure that the IAM policies associated with the EC2 instances are configured to follow the principle of least privilege. This means granting only the necessary permissions required for the instance to function.
+For example, if the instance does not need access to the secret recipes bucket, ensure that the IAM role associated with it does not have any permissions related to that S3 bucket.
+Use VPC Endpoints for S3:
+
+If the application needs to access the S3 bucket, consider using VPC endpoints for S3. This allows instances in your VPC to access S3 without traversing the public internet, reducing the risk of unauthorized access.
+Encrypt Sensitive Data:
+
+Ensure that sensitive data stored in S3 is encrypted using AWS Key Management Service (KMS). This adds an additional layer of security, as even if API credentials were compromised, the data would be inaccessible without the proper encryption keys.

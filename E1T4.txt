@@ -1,0 +1,10 @@
+
+Poor Security Practices:
+
+1. Using HTTP instead of HTTPS for Load Balancer Communication:
+   The load balancer is set to listen on port 80, which uses unencrypted HTTP. This practice exposes the web service to potential eavesdropping and interception of data. 
+   Justification: HTTPS should be used to encrypt data in transit, especially for public-facing services, to protect sensitive information and ensure confidentiality.
+
+2. Public Exposure of Web Application and Attack Simulation Instances:
+   Both the web application and attack simulation instances are deployed with public IPs, making them directly accessible from the internet. This increases the risk of attacks.
+   Justification: Instances should be placed behind private subnets, with only the load balancer exposed to the public. This reduces the attack surface and limits direct access to the instances.

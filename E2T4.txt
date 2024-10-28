@@ -1,0 +1,1 @@
+By using recommendation from Security Hub we can remove noncompliances

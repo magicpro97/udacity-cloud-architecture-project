@@ -1,0 +1,12 @@
+Findings Detected Related to the Brute Force Attack:
+
+AWS GuardDuty typically detects brute force attacks by monitoring for unusual patterns of failed login attempts. This can include multiple failed SSH login attempts from a single IP address or a range of IP addresses over a short period. The findings will usually indicate the source IP address, the target instance, and the nature of the attack.
+Screenshot of Guard Duty Findings:
+
+Make sure to take a screenshot of the GuardDuty findings that specifically relate to the brute force attack. This screenshot should be titled E3T1_guardduty.png.
+How GuardDuty Detected the Attack:
+
+AWS GuardDuty uses various sources of information to detect threats, including:
+VPC Flow Logs: These logs capture information about the IP traffic going to and from network interfaces in your VPC. GuardDuty analyzes these logs to identify patterns that may indicate a brute force attack.
+CloudTrail Event Logs: GuardDuty can also analyze CloudTrail logs to detect unauthorized access attempts or unusual API calls.
+DNS Logs: GuardDuty monitors DNS queries to identify potentially malicious domains that may be associated with the attack.
